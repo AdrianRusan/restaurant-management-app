@@ -89,7 +89,7 @@ const resolvers = {
 
         return generateToken(user);
       } catch (error) {
-        throw new Error(`Login failed: ${error.message}`);
+        throw new Error(`${error.message}`);
       }
     },
   },
